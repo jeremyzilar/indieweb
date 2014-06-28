@@ -41,4 +41,5 @@
 
 <body <?php body_class(); ?>>
 
+<?php include INC . 'onboarding.php'; ?>
 <?php include 'head.php'; ?>

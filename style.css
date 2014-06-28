@@ -128,212 +128,6 @@ section{
 
 
 
-
-/*Steps*/
-
-.step{
-  padding:15px 15px 20px 15px;
-  border-top: 1px #68cef6 solid;
-  border-top: 1px #68cef6 solid;
-  color:#fff;
-  background:rgba(255,255,255,.15);
-}
-.step.active{
-  background:rgba(255,255,255,.35); 
-}
-
-.step h5{
-  margin:0;
-  font-size: 24px;
-  font-weight: 700;
-}
-.step h5 span{
-  font-weight: 300;
-}
-
-.step h3,
-.step h4,
-.step h6{
-  margin-bottom: 30px;
-  text-align: center;
-}
-.step h6 span{
-  padding-bottom: 2px;
-  color:#fff;
-  border-bottom: 2px #fff solid;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-
-}
-.step p{
-  margin-bottom: 21px;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-.step .lead{
-  font-size:24px;
-  font-weight: 900;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-.step blockquote{
-  padding:10px 40px;
-  border:none;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  text-indent: -25px;
-}
-.step blockquote span{
-  margin-right: 5px;
-  font-weight: 700;
-}
-
-
-
-/*Mission*/
-.mission{
-  /*background: white;*/
-  /*background:#A3E3FD;*/
-  /*background:rgba(252,204,0,.8);*/
-}
-.mission p{
-  margin-bottom: 24px;
-  /*text-align: center;*/
-  font-size:21px;
-  font-weight: 700;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-.mission p a{
-  /*display: block;*/
-}
-.mission *:last-child{
-  margin-bottom: 0;
-}
-.mission blockquote{
-  padding:10px 40px;
-  border:none;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  text-indent: -25px;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-.mission blockquote span{
-  margin-right: 5px;
-  font-weight: 700;
-}
-.mission .lead{
-  font-size:24px;
-  font-weight: 900;
-}
-
-.mission-nav{
-  padding:0;
-  text-align: center;
-}
-.mission-nav li{
-  padding: 5px .6em;
-  display: inline;
-  font-size: 21px;
-  font-weight: 800;
-}
-
-
-
-/*MSG box*/
-#survey-msg{
-  text-align: center;
-  background:rgba(205,217,113,1);
-  background:rgba(43,160,90,.9);
-}
-#survey-msg p{
-  margin:0 0 15px 0;
-  font-size: 18px;
-  color: white;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-#survey-msg p em{
-  border-bottom: 2px #fff dotted;
-}
-#survey-msg h3{
-  margin:0 0 28px 0;
-  font-size:32px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-#survey-msg h3 a{
-  padding-bottom: 3px;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-     -moz-transition: all 0.2s ease-in-out;
-       -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-}
-#survey-msg h3 a:hover{
-  border-bottom: 3px #fff solid;
-}
-#survey-msg h3 img{
-  margin-top: -3px;
-  margin-left: 5px;
-  width: 25px;
-}
-
-
-#process{
-  background: #138BBB;
-  /*background: #13a1dc;*/
-  color:#fff;
-}
-#process p{
-  margin-bottom: 24px;
-  font-weight: 300;
-  font-size: 28px;
-}
-
-#process .btn-learn{
-  margin-top: 15px;
-  padding: 6px 18px;
-  background: #F16B6D;
-  color: #fff;
-  font-size: 21px;
-  font-weight: 700;
-}
-#process .btn-learn i{
-  position: relative;
-  top:2px;
-  left:2px;
-}
-
-
-
-/*Social Promo on Homepage*/
-#social{
-  padding: 35px 0;
-  background: #fff;
-}
-#social h4{
-  margin:0 0 15px 0;
-  font-weight: 300;
-  font-size: 21px;
-  text-shadow: 0 1px rgba(0,0,0,0.15);
-}
-#social h4 i{
-  position: relative;
-  top: 6px;
-  left: -6px;
-}
-#social h4 a{
-  color:#0098ff;
-  text-decoration: none;
-  -webkit-transition: all 0.15s ease-in-out;
-     -moz-transition: all 0.15s ease-in-out;
-       -o-transition: all 0.15s ease-in-out;
-          transition: all 0.15s ease-in-out;
-}
-#social h4 a:hover{
-  color:#0080d8;
-}
-
 /*ENTRY // Blog Posts*/
 
 .entry{
@@ -411,6 +205,15 @@ section{
   color:#999;
   font-size:13px
 }
+
+
+
+#onboarding{}
+#onboarding .step{
+  background: #ddd;
+}
+
+
 
 
 /*Footer*/
