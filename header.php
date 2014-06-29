@@ -41,9 +41,13 @@
 
 <body <?php body_class(); ?>>
 
-<?php include INC . 'onboarding.php'; ?>
-<?php include 'head.php'; ?>
 
-<?php
+<?php 
+  // When the user is logged in, show them the onboard messages
+  if (is_user_logged_in()){
+    include INC . 'onboarding.php';
+  }
+
+  include 'head.php';
   writer();
 ?>
