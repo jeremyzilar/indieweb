@@ -16,6 +16,9 @@
     if (isset($_POST["update_settings"])) {  
       $indieweb_profile = stripslashes($_POST["indieweb_profile"]);
       update_option("indieweb_profile", $indieweb_profile);
+
+      $indieweb_forkids = $_POST["indieweb_forkids"];
+      update_option("indieweb_forkids", $indieweb_forkids);
       echo '<div id="message" class="updated"><p>Settings saved</p></div>';
     }
     
@@ -36,6 +39,20 @@
             </th>
             <td>
               <input placeholder="http://" name="indieweb_profile" value="<?php echo stripslashes(get_option("indieweb_profile")); ?>" />
+            </td>
+          </tr>
+
+          <tr valign="top">  
+            <th scope="row">  
+              <label for="indieweb_forkids">
+                Child Mode
+              </label>
+            </th>
+            <td>
+              <p>
+                <input type="checkbox" name="indieweb_forkids" id="indieweb_forkids" <?php checked(get_option("indieweb_forkids"), 'on' ); ?> />
+                <label for="indieweb_forkids">Child Mode</label>
+              </p>
             </td>
           </tr>
         </table>

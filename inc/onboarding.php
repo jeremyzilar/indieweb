@@ -26,12 +26,13 @@ EOF;
 	$WebMentionPlugin_state = '';
 	$WebMentionPlugin_name = 'WebMention Plugin';
 	$WebMentionPlugin_slug = 'webmention';
+	$WebMentionPlugin_class = 'WebMentionPlugin';
 	$WebMentionPlugin_path = 'webmention/webmention.php';
 	$WebMentionPlugin_url = 'https://github.com/pfefferle/wordpress-webmention/blob/master/webmention.php';
 	$WebMentionPlugin_installUrl = wp_nonce_url(admin_url('update.php?action=install-plugin&plugin='.$WebMentionPlugin_slug), 'doing_something', '_wpnonce');
 
 	$state = '';
-	if (!function_exists($WebMentionPlugin_slug)) {
+	if (!class_exists($WebMentionPlugin_class)) {
 		$state = <<< EOF
 		<div class="col-xs-12 step">
 			<a href="$WebMentionPlugin_installUrl" class="btn btn-xs btn-primary pull-right">Install</a>
