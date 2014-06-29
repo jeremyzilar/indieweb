@@ -34,6 +34,11 @@
       $('#onboarding').slideUp('fast');
     });
 
+    $("#wedit").keyup(function(event) {
+      var t = $(this).text();
+      $('#postText').val(t);
+    });
+
     
 
 

@@ -45,9 +45,13 @@ function writer(){
               <input type="text" name="post_title" class="form-control" id="writerHeadline" placeholder="Headline">
             </div>
 
+            <div id="wedit" contenteditable="true">
+
+            </div>
+
             <!-- Text Area -->
             <div class="form-group">
-              <textarea name="postText" class="form-control" rows="3"></textarea>
+              <textarea id="postText" name="postText" class="form-control" rows="3"></textarea>
             </div>
 
             <!-- Related Url -->

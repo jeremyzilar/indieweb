@@ -6,10 +6,19 @@
 #writer label{
   display: none;
 }
+#writer textarea,
 #writerHeadline,
 #relatedUrl{
 	display: none;
 }
 #writer textarea{
 	height:140px;
+}
+
+
+#wedit{
+	padding: 5px;
+	height:200px;
+	border-radius: 3px;
+	background: #fff;
 }
