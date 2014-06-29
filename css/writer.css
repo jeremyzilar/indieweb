@@ -6,3 +6,10 @@
 #writer label{
   display: none;
 }
+#writerHeadline,
+#relatedUrl{
+	display: none;
+}
+#writer textarea{
+	height:140px;
+}

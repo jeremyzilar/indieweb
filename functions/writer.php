@@ -53,7 +53,7 @@ function writer(){
             <!-- Related Url -->
             <div class="form-group">
               <label for="relatedUrl">Related URL</label>
-              <input type="text" name="relatedUrl" placeholder="http://" class="form-control" tabindex="3" />
+              <input type="text" id="relatedUrl" name="relatedUrl" placeholder="http://" class="form-control" tabindex="3" />
             </div>
 
             <input checked="checked" type="hidden" value="$requestUri" name="writerUrl" >

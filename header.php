@@ -12,9 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Profile Image -->
-  <?php $profile_img = get_option("indieweb_profile"); ?>
-  <link rel="shortcut icon" href="<?php echo $profile_img; ?>" />
-  <link rel="apple-touch-icon-precomposed" href="<?php echo $profile_img; ?>"/>
+  <?php 
+    $profile_img = get_option("indieweb_profile");
+    if (!empty($profile_img)) { ?>
+      <!-- Profile Image -->
+      <link rel="shortcut icon" href="<?php echo $profile_img; ?>" />
+      <link rel="apple-touch-icon-precomposed" href="<?php echo $profile_img; ?>"/>    
+    <?php }
+  ?>
 
   <!-- Fonts: Lato / http://www.latofonts.com/ -->
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
