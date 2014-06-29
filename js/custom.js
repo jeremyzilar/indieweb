@@ -29,6 +29,11 @@
       }
     });
 
+
+    $('#onboarding .close').click(function() {
+      $('#onboarding').slideUp('fast');
+    });
+
     
 
 

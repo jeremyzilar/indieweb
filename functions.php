@@ -9,6 +9,7 @@ include_once 'functions/loop.php';
 include_once 'functions/images.php';
 include_once 'functions/related-link.php';
 include_once 'functions/writer.php';
+include_once 'functions/theme-options.php';
 
 
 // Variables

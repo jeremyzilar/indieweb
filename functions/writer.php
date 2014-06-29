@@ -121,7 +121,7 @@ function writerHeader() {
         'post_format'   => $post_format,
         'relatedUrl'    => $relatedUrl
       ));
-      add_post_meta($new_post_id, 'url', $relatedUrl, true);
+      add_post_meta($new_post_id, 'related_link_url', $relatedUrl, true);
       
       if('POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action_post']) && $_POST['action_post'] == 'post') {
         set_post_format($new_post_id , 'standard');

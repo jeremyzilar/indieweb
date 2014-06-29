@@ -102,6 +102,7 @@ section{
 
 /*HEAD*/
 #head{
+  margin-top: 60px;
   padding:0;
 }
 #head .container{
@@ -110,9 +111,18 @@ section{
 }
 #head h1{
   margin:0;
+  text-align: center;
+  font-weight: 800;
   /*margin-top: 2em;*/
 }
-#head h1 img{}
+#head h1 img{
+  width:100px;
+  border-radius: 100px;
+}
+#head h1 a{
+  color:#222;
+  text-decoration: none;
+}
 #head h2{
   margin-top: 3em;
   font-size:21px;
@@ -208,9 +218,35 @@ section{
 
 
 
-#onboarding{}
+#onboarding{
+  /*margin-bottom: 80px;*/
+  padding: 40px 0;
+  background: #fff;
+}
 #onboarding .step{
-  background: #ddd;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fffad2;
+  border-radius: 3px;
+  color:#888;
+}
+#onboarding .step p{
+  margin: 0;
+  font-size: 15px;
+}
+#onboarding .close{
+  font-size: 12px; 
+  text-align: center;
+  display: block;
+  float: none;
+}
+#onboarding .close span{
+  font-size: 24px; 
+}
+#onboarding .foot img{
+  margin: 30px auto;
+  width:80px;
 }
 
 
