@@ -1,7 +1,5 @@
 <div class="<?php echo GRID; ?>">
   <header class="entry-header">
-		<?php psfc_the_kicker(); ?>
-
   	<?php if ( is_single() ) : ?>
   	<h1 class="entry-title"><?php the_title(); ?></h1>
   	<?php else : ?>
@@ -23,7 +21,7 @@
 	<?php endif; ?>
 
 	<footer class="entry-meta">
-    <?php psfc_entry_meta($post->ID); ?>
+    <?php indieweb_entry_meta($post->ID); ?>
 	</footer><!-- .entry-meta -->
 
 	<!-- Comments Start here -->

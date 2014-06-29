@@ -76,16 +76,16 @@ function wpforce_featured() {
 		}
 	}
 }  //end function
-add_action('the_post', 'wpforce_featured');
-add_action('save_post', 'wpforce_featured');
-add_action('draft_to_publish', 'wpforce_featured');
-add_action('new_to_publish', 'wpforce_featured');
-add_action('pending_to_publish', 'wpforce_featured');
-add_action('future_to_publish', 'wpforce_featured');
+// add_action('the_post', 'wpforce_featured');
+// add_action('save_post', 'wpforce_featured');
+// add_action('draft_to_publish', 'wpforce_featured');
+// add_action('new_to_publish', 'wpforce_featured');
+// add_action('pending_to_publish', 'wpforce_featured');
+// add_action('future_to_publish', 'wpforce_featured');
 
 
 
-function psfc_get_featured_image($size){
+function indieweb_get_featured_image($size){
 	global $post;
 	if ( has_post_thumbnail() ) {
 		$thumb = get_the_post_thumbnail( $post->ID, $size);

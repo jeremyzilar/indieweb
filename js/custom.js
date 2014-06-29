@@ -21,10 +21,15 @@
 
 
 
+    $('#submit_post').click(function() {
+      if ($('.post_URL').val() == 'http://') {
+        $('.post_URL').attr('value', '');
+        // jQuery('.post_URL').value = 'WORKS';
+        // alert(sourceTitle, 'Title');
+      }
+    });
 
-
-
-
+    
 
 
 

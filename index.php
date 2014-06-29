@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="blog">
-	<?php loop(); ?>
+	<?php loop($type = ''); ?>
 </div>
 
 <?php get_footer(); ?>

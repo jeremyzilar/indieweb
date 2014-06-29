@@ -1,0 +1,8 @@
+
+#writer{}
+#writer .box{
+  padding:0;
+}
+#writer label{
+  display: none;
+}

@@ -8,7 +8,7 @@ include_once 'functions/wp_enqueue_script.php';
 include_once 'functions/loop.php';
 include_once 'functions/images.php';
 include_once 'functions/related-link.php';
-include_once 'functions/kicker.php';
+include_once 'functions/writer.php';
 
 
 // Variables
@@ -45,12 +45,12 @@ add_theme_support( 'infinite-scroll', array(
 add_theme_support( 'post-thumbnails' );
 
 // Register a Menu
-function psfc_register_menu() {
+function indieweb_register_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
   register_nav_menu('mission-msg',__( 'Mission Menu' ));
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
-add_action( 'init', 'psfc_register_menu' );
+add_action( 'init', 'indieweb_register_menu' );
 
 
 // Nav Menu
@@ -87,7 +87,7 @@ if (!is_admin()) {
 
 
 
-function psfc_get_link_url() {
+function indieweb_get_link_url() {
 	$has_url = get_the_post_format_url();
 	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
@@ -105,16 +105,16 @@ function get_related(){
 }
 
 // Entry Meta
-if ( ! function_exists( 'psfc_entry_meta' ) ) :
-function psfc_entry_meta($id) {
+if ( ! function_exists( 'indieweb_entry_meta' ) ) :
+function indieweb_entry_meta($id) {
 	if (is_single()) {
 		$tweet = get_the_title() . ' by @jeremyzilar ' . get_permalink() . '?btn-twitter';
 		echo '<a data-msg="'. rawurlencode($tweet) .'" class="btn btn-xs btn-default btn-twitter" href="twitter://post?message='. rawurlencode($tweet) .'">Tweet</a> ';
 	}
 
-  psfc_entry_date();
+  indieweb_entry_date();
 
-	echo ' <a class="hidden" href="http://psfc.com" rel="author">Jeremy Zilar</a>';
+	echo ' <a class="hidden" href="http://indieweb.com" rel="author">Jeremy Zilar</a>';
 
 	if ( is_user_logged_in() ) {
 		$edit = get_edit_post_link($id);
@@ -132,7 +132,7 @@ function psfc_entry_meta($id) {
 endif;
 
 // CATEGORY
-function psfc_category(){
+function indieweb_category(){
   if (!is_category()) {
     foreach((get_the_category()) as $category) {
       if ($category->cat_name !== 'Uncategorized') {
@@ -143,8 +143,8 @@ function psfc_category(){
 }
 
 // DATE
-if ( ! function_exists( 'psfc_entry_date' ) ) :
-function psfc_entry_date( $echo = true ) {
+if ( ! function_exists( 'indieweb_entry_date' ) ) :
+function indieweb_entry_date( $echo = true ) {
   $date = '<a class="date" href="'.get_permalink().'" title="'.the_title_attribute( 'echo=0' ).'" rel="bookmark"><time class="dt-published published entry-date rel_time" datetime="'.get_the_date('c').'">'.get_the_time('g:i a').' (<span>'.get_the_time('F j, Y g:i a').'</span>)</time></a>';
   echo $date;
   return $date;

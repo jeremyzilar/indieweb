@@ -1,8 +1,8 @@
 <?php
 
-define('NYT_KICKER_META', '_psfc_kicker');
+define('NYT_KICKER_META', '_indieweb_kicker');
 
-function psfc_kicker_meta() {
+function indieweb_kicker_meta() {
 
 	$selected_item = '';
 
@@ -16,13 +16,13 @@ function psfc_kicker_meta() {
         $selected = '';
     }
 
-	$dropdown_items = psfc_get_kicker_dropdown();
+	$dropdown_items = indieweb_get_kicker_dropdown();
 
 	if(!empty($dropdown_items)) {
 
 		 echo <<<EOF
 <div class="primary_kicker">
-<select name="psfc_kicker" id="psfc_kicker" style="width:250px;">
+<select name="indieweb_kicker" id="indieweb_kicker" style="width:250px;">
 <option value="" $selected>Select Primary Kicker</option>
 EOF;
 
@@ -46,11 +46,11 @@ EOF;
 </div>
 EOF;
 
-		wp_nonce_field( 'nyt-kicker-nonce', 'psfc_kicker_nonce', false );
+		wp_nonce_field( 'nyt-kicker-nonce', 'indieweb_kicker_nonce', false );
 	}
 }
 
-function psfc_get_kicker_save($post_id) {
+function indieweb_get_kicker_save($post_id) {
 
 	if ( wp_is_post_revision( $post_id ) || wp_is_post_autosave( $post_id ) )
 		return $post_id;
@@ -59,26 +59,26 @@ function psfc_get_kicker_save($post_id) {
 		return $post_id;
 
 	// Checks to make sure we came from the right page
-	if ( !wp_verify_nonce( $_POST['psfc_kicker_nonce'], 'nyt-kicker-nonce' ) )
+	if ( !wp_verify_nonce( $_POST['indieweb_kicker_nonce'], 'nyt-kicker-nonce' ) )
 		return $post_id;
 
 	// Checks user caps
 	if ( !current_user_can( 'edit_post', $post_id ) )
 		return $post_id;
 
-	update_post_meta($post_id, NYT_KICKER_META, $_POST["psfc_kicker"], get_post_meta( $post_id, NYT_KICKER_META, true ));
+	update_post_meta($post_id, NYT_KICKER_META, $_POST["indieweb_kicker"], get_post_meta( $post_id, NYT_KICKER_META, true ));
 
 	return $post_id;
 }
 
-function psfc_get_kicker_dropdown() {
+function indieweb_get_kicker_dropdown() {
 	return get_terms('category', array(	'fields'     => 'names',
 										'orderby'    => 'name',
 										'hide_empty' => 0)
 					);
 }
 
-function psfc_get_kicker($post_id = 0, $default = false) {
+function indieweb_get_kicker($post_id = 0, $default = false) {
 
     $post_id = (int) $post_id;
 
@@ -95,12 +95,12 @@ function psfc_get_kicker($post_id = 0, $default = false) {
 	return get_post_meta( $post_id, NYT_KICKER_META, true );
 }
 
-function psfc_the_kicker($img = true) {
+function indieweb_the_kicker($img = true) {
 	$p_id = get_the_ID();
 	if(empty($p_id))
 		return;
 
-    $kicker = psfc_get_kicker();
+    $kicker = indieweb_get_kicker();
 		$status = get_post_status();
 		$s = '<span class="status-label">' . $status . '</span>';
 		if ($status !== 'draft') {
@@ -128,10 +128,10 @@ function add_kicker_meta_box() {
   $types = array( 'post', 'artwork', 'page', 'code' );
 
   foreach( $types as $type ) {
-    add_meta_box( 'psfc_kicker_div', 'Kicker', 'psfc_kicker_meta', $type, 'side', 'high');
+    add_meta_box( 'indieweb_kicker_div', 'Kicker', 'indieweb_kicker_meta', $type, 'side', 'high');
   }
 
 }
-add_action('save_post', 'psfc_get_kicker_save', 0);
+add_action('save_post', 'indieweb_get_kicker_save', 0);
 add_action('add_meta_boxes', 'add_kicker_meta_box');
 ?>

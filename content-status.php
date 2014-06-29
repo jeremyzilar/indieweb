@@ -2,7 +2,7 @@
   
   <header class="entry-header">
   	<h6 class="entry-title">
-			<?php psfc_category(); ?>
+			<?php indieweb_category(); ?>
 		</h6>
   </header><!-- .entry-header -->
   
@@ -12,6 +12,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-    <?php psfc_entry_meta($post->ID); ?>
+    <?php indieweb_entry_meta($post->ID); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post -->
