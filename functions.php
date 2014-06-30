@@ -27,8 +27,7 @@ $inc = $root . '/inc/';
 define('INC', $inc);
 
 // The Common Grid — used in multiple places
-// $grid = 'entry-box col-lg-10 col-md-8 col-sm-9 col-md-offset-1 col-sm-offset-1';
-$grid = 'entry-box col-xs-12';
+$grid = 'h-entry col-xs-12';
 define('GRID', $grid);
 
 // Hide WP Admin Bar
