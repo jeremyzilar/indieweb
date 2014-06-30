@@ -34,7 +34,7 @@ function writer(){
             <input type="hidden" name="post_status" tabindex="1" value="publish"/>
 
             <!-- Post format -->
-            <input type="hidden" name="post_format" tabindex="1" value="standard"/>
+            <input type="hidden" name="post_format" tabindex="1" value="status"/>
             
             <!-- Post Parent --> 
             <input type="hidden" name="post_parent" id="post_parent" tabindex="1" value="$post_parent"/>
@@ -128,7 +128,7 @@ function writerHeader() {
       add_post_meta($new_post_id, 'related_link_url', $relatedUrl, true);
       
       if('POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action_post']) && $_POST['action_post'] == 'post') {
-        set_post_format($new_post_id , 'standard');
+        set_post_format($new_post_id , 'status');
       } else if('POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action_link']) && $_POST['action_link'] == 'post' ) {
         set_post_format($new_post_id , 'link');
       }
