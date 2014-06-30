@@ -12,11 +12,11 @@ function writer(){
 
     // Post Parent — because I want to be able to post child posts.
     $post_parent = '';
-    if (is_single()){
-      global $post;
-      $currentid = $_GET['post'];
-      $post_parent = $post->ID;
-    }
+    // if (is_single()){
+    //   global $post;
+    //   $currentid = $_GET['post'];
+    //   $post_parent = $post->ID;
+    // }
 
     $wp_nonce_field = wp_nonce_field( 'new-post' );
 

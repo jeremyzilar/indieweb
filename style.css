@@ -218,6 +218,20 @@ section{
 }
 
 
+/*Mentions*/
+.mentions{}
+.mention{}
+.mention-author{}
+.mention-body{}
+.mention-body p:last-child{
+  margin:0;
+}
+.mention-date{
+  font-size: 12px;
+  color:#999;
+}
+
+
 
 #onboarding{
   /*margin-bottom: 80px;*/

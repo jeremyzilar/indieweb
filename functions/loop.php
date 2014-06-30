@@ -1,6 +1,6 @@
 <?php
 
-function loop($type){
+function loop(){
 	$i = 0;
 	// global $wp_query;
 	// echo $wp_query->found_posts;
