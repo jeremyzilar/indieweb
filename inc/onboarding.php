@@ -42,7 +42,7 @@ EOF;
 	}
 ?>
 
-<section id="onboarding">
+<section id="onboarding" class="hidden">
 	<div class="container">
 		<div class="col-xs-12">
 			<h3>Welcome</h3>
