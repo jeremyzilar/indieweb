@@ -1,7 +1,13 @@
 
 #writer{}
+
+#writer .type-msg{
+	text-align: center;
+}
+
 #writer .box{
   padding:0;
+  display: none;
 }
 #writer label{
   display: none;
@@ -14,11 +20,15 @@
 #writer textarea{
 	height:140px;
 }
-
+#writer .submit{
+	display: none;
+}
 
 #wedit{
-	padding: 5px;
-	height:200px;
+	padding:0;
+	/*height:200px;*/
+	height:0;
+  opacity: 0;
 	border-radius: 3px;
 	overflow:auto;
 	background: #fff;

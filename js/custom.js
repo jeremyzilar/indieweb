@@ -19,7 +19,19 @@
     //   $('#head').height($wh - 300).width($ww);
     // });
 
-
+    
+    // writer
+    $('#writer button').click(function() {
+      $(this).hide('fast');
+      $("#writer .box").show();
+      $("#wedit").animate({
+          opacity: '1',
+          height: '200px',
+          padding:'5px'
+        }, 'fast', function() {
+          $('#writer .submit').show();
+        });
+    });
 
     $('#submit_post').click(function() {
       if ($('.post_URL').val() == 'http://') {

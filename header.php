@@ -59,5 +59,7 @@
   }
 
   include 'head.php';
+
+  // Writer
   writer();
 ?>

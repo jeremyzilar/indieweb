@@ -23,6 +23,9 @@ function writer(){
     echo <<< EOF
     <section id="writer">
       <div class="container">
+        <div class="col-xs-12 type-msg">
+          <button class="btn btn-primary btn-lg">Type Message</button>
+        </div>
         <div class="col-xs-12 box">
           <form name="new-post" method="post" action="">
             <input type="hidden" name="action_post" value="post" />
@@ -63,7 +66,7 @@ function writer(){
             <input checked="checked" type="hidden" value="$requestUri" name="writerUrl" >
 
             <!-- Submit -->
-            <input id="submit_post" class="submit btn btn-sm btn-primary" type="submit" value="Post it" />           
+            <input id="submit_post" class="submit btn btn-lg btn-primary btn-block" type="submit" value="Done" />           
           </form>
         </div>
       </div><!-- .container -->

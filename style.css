@@ -147,6 +147,7 @@ section{
 }
 .entry:first-child{
   margin-top:0;
+  padding-top:0;
 }
 .entry p{
   margin-bottom: 21px;
