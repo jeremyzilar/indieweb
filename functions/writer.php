@@ -24,7 +24,7 @@ function writer(){
     <section id="writer">
       <div class="container">
         <div class="col-xs-12 type-msg">
-          <button class="btn btn-primary btn-lg">Type Message</button>
+          <button class="btn btn-primary btn-lg" placeholder="Type Message">Type Message</button>
         </div>
         <div class="col-xs-12 box">
           <form name="new-post" method="post" action="">
