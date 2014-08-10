@@ -10,11 +10,11 @@
 	/*background:#db0934;*/
 	border-radius: 4px;
 	border:none;
+	display: none;
 }
 
 #writer .box{
   padding:0;
-  display: none;
 }
 #writer label{
   display: none;
