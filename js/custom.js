@@ -26,7 +26,7 @@
       $("#writer .box").show();
       $("#wedit").animate({
           opacity: '1',
-          height: '200px',
+          height: '180px',
           padding:'5px'
         }, 'fast', function() {
           $('#writer .submit').show();

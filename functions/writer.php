@@ -48,7 +48,7 @@ function writer(){
               <input type="text" name="post_title" class="form-control" id="writerHeadline" placeholder="Headline">
             </div>
 
-            <div id="wedit" contenteditable="true">
+            <div id="wedit" contenteditable="true" autocapitalize="off" autocorrect="off">
 
             </div>
 

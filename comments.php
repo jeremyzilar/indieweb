@@ -6,7 +6,6 @@ if ( post_password_required() )
 ?>
 
 <div class="comments-area">
-ddd
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title"><?php
 				printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'twentythirteen' ),

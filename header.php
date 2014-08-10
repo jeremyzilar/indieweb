@@ -60,6 +60,8 @@
 
   include 'head.php';
 
-  // Writer
-  writer();
+  if (is_home()) {
+    // Writer
+    writer();
+  }
 ?>

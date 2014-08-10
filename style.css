@@ -54,10 +54,6 @@ section{
   padding:45px 0;
 }
 
-.container{
-  max-width:400px;
-}
-
 
 /*NAVIGATION*/
 .navbar{
@@ -142,8 +138,8 @@ section{
 /*ENTRY // Blog Posts*/
 
 .entry{
-  margin:40px 0;
-  padding:40px 0;
+  margin:30px 0;
+  padding:30px 0;
 }
 .entry:first-child{
   margin-top:0;
@@ -176,6 +172,35 @@ section{
   color:#2d2d2d;
   text-decoration: none;
 }
+
+.entry-header{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.entry-header p{
+  padding: 3px 10px 5px 10px;
+/*  background:yellow;
+  background:#ffe500;
+  background:#fff000;
+  background:#ffdc00;*/
+  color:#333;
+  display: inline;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 4px;
+  /*text-transform: uppercase;*/
+}
+.entry-header a{
+  color:#333;
+}
+
+.entry-content{
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+
 
 
 /*Draft Posts*/
@@ -221,7 +246,11 @@ section{
 
 /*Mentions*/
 .mentions{}
-.mention{}
+.mention{
+  display: none;
+  font-size: 13px;
+  color:#ccc;
+}
 .mention-author{}
 .mention-body{}
 .mention-body p:last-child{

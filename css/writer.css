@@ -5,6 +5,13 @@
 	text-align: center;
 }
 
+#writer .type-msg .btn{
+	/*background:#599f87;*/
+	/*background:#db0934;*/
+	border-radius: 4px;
+	border:none;
+}
+
 #writer .box{
   padding:0;
   display: none;
@@ -32,4 +39,6 @@
 	border-radius: 3px;
 	overflow:auto;
 	background: #fff;
+	font-size:36px;
+	font-weight: 800;
 }

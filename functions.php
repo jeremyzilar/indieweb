@@ -104,6 +104,17 @@ function get_related(){
 	}
 }
 
+if ( ! function_exists( 'indieweb_entry_head' ) ) :
+function indieweb_entry_head($id) {
+	$author = get_the_author_meta( 'display_name' );
+	$author_posts = get_author_posts_url( get_the_author_meta('ID'));
+	$date = '<a class="date" href="'.get_permalink().'" title="'.the_title_attribute( 'echo=0' ).'" rel="bookmark"><time class="dt-published published entry-date rel_time" datetime="'.get_the_date('c').'"><span>'.get_the_time('F j, Y g:i a').'</span></time></a>';
+	echo '<p>' . $author . ' typed this message ' . $date . '</p>';
+ 	// echo ' <a href="" rel="author">Jeremy Zilar</a>';
+
+}
+endif;
+
 // Entry Meta
 if ( ! function_exists( 'indieweb_entry_meta' ) ) :
 function indieweb_entry_meta($id) {
@@ -115,11 +126,6 @@ function indieweb_entry_meta($id) {
   indieweb_entry_date();
 
 	echo ' <a class="hidden" href="http://indieweb.com" rel="author">Jeremy Zilar</a>';
-
-	if ( is_user_logged_in() ) {
-		$edit = get_edit_post_link($id);
-		echo '<a href="'.$edit.'" class="btn-edit btn btn-xs btn-primary">edit</a>';
-	}
 
 	if (is_single()){
 		// Translators: used between list items, there is a space after the comma.
