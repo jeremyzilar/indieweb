@@ -24,9 +24,4 @@
     <?php indieweb_entry_meta($post->ID); ?>
 	</footer><!-- .entry-meta -->
 
-	<!-- Comments Start here -->
-	<?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { ?>
-		<?php //comments_template(); ?>
-	<?php } ?>
-
 </div>
