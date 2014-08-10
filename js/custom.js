@@ -21,16 +21,27 @@
 
     
     // writer
+    $('#writer button').hide();
+    $("#writer .box").show();
+    $("#writer .box").focus();
+    $("#wedit").animate({
+      opacity: '1',
+      height: '180px',
+      padding:'5px'
+    }, 'fast', function() {
+      $('#writer .submit').show();
+    });
+
     $('#writer button').click(function() {
       $(this).hide('fast');
       $("#writer .box").show();
       $("#wedit").animate({
-          opacity: '1',
-          height: '180px',
-          padding:'5px'
-        }, 'fast', function() {
-          $('#writer .submit').show();
-        });
+        opacity: '1',
+        height: '180px',
+        padding:'5px'
+      }, 'fast', function() {
+        $('#writer .submit').show();
+      });
     });
 
     $('#submit_post').click(function() {
