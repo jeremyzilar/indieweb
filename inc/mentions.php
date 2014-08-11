@@ -26,6 +26,23 @@
 
 			echo <<< EOF
 			<div class="mention">
+				<p>mention_ID = $mention_ID</p>
+				<p>mention_post_ID = $mention_post_ID</p>
+				<p>mention_author = $mention_author</p>
+				<p>mention_author_email = $mention_author_email</p>
+				<p>mention_author_url = $mention_author_url</p>
+				<p>mention_author_IP = $mention_author_IP</p>
+				<p>mention_date = $mention_date</p>
+				<p>mention_date_gmt = $mention_date_gmt</p>
+				<p>mention_body = $mention_body</p>
+				<p>mention_karma = $mention_karma</p>
+				<p>mention_approved = $mention_approved</p>
+				<p>mention_agent = $mention_agent</p>
+				<p>mention_type = $mention_type</p>
+				<p>mention_parent = $mention_parent</p>
+				<p>mention_user_id = $mention_parent</p>
+
+
 				<h5 class="mention-author">$mention_author</h5>
 				<div class="mention-body">
 					$mention_body
