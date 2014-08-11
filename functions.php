@@ -45,12 +45,16 @@ add_theme_support( 'infinite-scroll', array(
 add_theme_support( 'post-thumbnails' );
 
 // Register a Menu
-function indieweb_register_menu() {
-  register_nav_menu('main-menu',__( 'Main Menu' ));
-  register_nav_menu('mission-msg',__( 'Mission Menu' ));
-  register_nav_menu('footer-menu',__( 'Footer Menu' ));
-}
-add_action( 'init', 'indieweb_register_menu' );
+// function indieweb_register_menu() {
+//   register_nav_menu('main-menu',__( 'Main Menu' ));
+//   register_nav_menu('mission-msg',__( 'Mission Menu' ));
+//   register_nav_menu('footer-menu',__( 'Footer Menu' ));
+// }
+// add_action( 'init', 'indieweb_register_menu' );
+
+add_theme_support( 'infinite-scroll', array(
+  'container' => 'blog'
+) );
 
 
 // Nav Menu
