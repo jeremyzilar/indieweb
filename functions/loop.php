@@ -9,22 +9,12 @@ function loop(){
 
 	if (have_posts()) {
 		while (have_posts()) {
-			the_post(); ?>
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
-				<div class="container">
-					<div class="row">
-						<?php
-							if (empty($type)) {
-								get_template_part('content', get_post_format() );
-							} else {
-								get_template_part('content', $type );
-							}
-						?>
-					</div> <!-- .row -->
-				</div> <!-- .container -->
-			</article> <!-- #post -->
-		<?php
+			the_post(); 
+      if (empty($type)) {
+        get_template_part('content', get_post_format() );
+      } else {
+        get_template_part('content', $type );
+      }
 		$i++;
 		}
 		// include TDIR . '/nextprev.php';

@@ -53,7 +53,8 @@ add_theme_support( 'post-thumbnails' );
 // add_action( 'init', 'indieweb_register_menu' );
 
 add_theme_support( 'infinite-scroll', array(
-  'container' => 'blog'
+  'container' => 'blog',
+  'wrapper' => false
 ) );
 
 
