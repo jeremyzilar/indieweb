@@ -38,5 +38,5 @@
 EOF;
 		endforeach;
 	?>
-	<?php comments_template(); ?>
+	<?php //comments_template(); ?>
 <?php } ?>

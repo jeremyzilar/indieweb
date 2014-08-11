@@ -252,7 +252,7 @@ section{
 /*Mentions*/
 .mentions{}
 .mention{
-  display: none;
+  /*display: none;*/
   font-size: 13px;
   color:#ccc;
 }
