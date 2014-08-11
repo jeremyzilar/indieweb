@@ -8,6 +8,7 @@
     );
 		$mentions = get_comments($defaults);
 		foreach($mentions as $mention) :
+			print_r($mention);
 			$mention_ID = $mention->comment_ID;
 			$mention_post_ID = $mention->comment_post_ID;
 			$mention_author = $mention->comment_author;
