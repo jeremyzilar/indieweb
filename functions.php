@@ -109,7 +109,7 @@ function indieweb_entry_head($id) {
 	$author = get_the_author_meta( 'display_name' );
 	$author_posts = get_author_posts_url( get_the_author_meta('ID'));
 	$date = '<a class="date" href="'.get_permalink().'" title="'.the_title_attribute( 'echo=0' ).'" rel="bookmark"><time class="dt-published published entry-date rel_time" datetime="'.get_the_date('c').'"><span>'.get_the_time('F j, Y g:i a').'</span></time></a>';
-	echo '<p>' . $author . ' typed this message ' . $date . '</p>';
+	echo '<p>' . $author . ' typed a message ' . $date . '</p>';
  	// echo ' <a href="" rel="author">Jeremy Zilar</a>';
 
 }

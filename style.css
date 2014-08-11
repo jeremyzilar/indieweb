@@ -114,7 +114,7 @@ section{
   /*margin-top: 2em;*/
 }
 #head h1 .spot{
-  margin-bottom: 20px;
+  margin:0 auto;
   display: block;
 }
 #head h1 img{

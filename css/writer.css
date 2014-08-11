@@ -1,5 +1,8 @@
 
-#writer{}
+/*Writer CSS*/
+#writer{
+	padding:20px 0;
+}
 
 #writer .type-msg{
 	text-align: center;
