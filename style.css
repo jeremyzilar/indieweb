@@ -252,9 +252,23 @@ section{
 /*Mentions*/
 .mentions{}
 .mention{
-  /*display: none;*/
-  font-size: 13px;
-  color:#ccc;
+  font-size: 16px;
+  color:#666;
+  text-align: center;
+}
+.mention .avatar{
+  margin-right: 3px;
+  width:35px;
+  height: 35px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  top:13px;
+  border:1px #ccc solid;
+}
+.mention .avatar img{
+  width:35px;
 }
 .mention-author{}
 .mention-body{}
