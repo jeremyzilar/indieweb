@@ -3,6 +3,7 @@
     <div class="row">
       <div class="<?php echo GRID; ?>">
 			  <header class="entry-header">
+			  	<?php indieweb_entry_head($post->ID); ?>
 			  	<?php if ( is_single() ) : ?>
 			  	<h1 class="entry-title"><?php the_title(); ?></h1>
 			  	<?php else : ?>
@@ -22,10 +23,6 @@
 						<?php echo get_related(); ?>
 					</div><!-- .entry-content -->
 				<?php endif; ?>
-
-				<footer class="entry-meta">
-			    <?php indieweb_entry_meta($post->ID); ?>
-				</footer><!-- .entry-meta -->
 
 			</div>
     </div> <!-- .row -->
