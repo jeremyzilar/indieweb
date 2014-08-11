@@ -19,7 +19,7 @@
 			$mention_date = $mention->comment_date;
 			$mention_date_gmt = $mention->comment_date_gmt;
 			$mention_body = $mention->comment_content;
-			$mention_body = str_replace('favorited this.','favorited this',$mention_body);
+			$mention_body = str_replace('favorited this.','<i class="fa fa-star"></i>',$mention_body);
 			$mention_karma = $mention->comment_karma;
 			$mention_approved = $mention->comment_approved;
 			$mention_agent = $mention->comment_agent;
