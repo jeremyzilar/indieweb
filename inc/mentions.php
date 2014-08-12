@@ -19,7 +19,6 @@
 			$mention_date = $mention->comment_date;
 			$mention_date_gmt = $mention->comment_date_gmt;
 			$mention_body = $mention->comment_content;
-			$mention_body = str_replace('favorited this.','<i class="fa fa-star"></i>',$mention_body);
 			$mention_karma = $mention->comment_karma;
 			$mention_approved = $mention->comment_approved;
 			$mention_agent = $mention->comment_agent;
@@ -31,12 +30,14 @@
 			$semantic_linkbacks_avatar = get_comment_meta( $mention_ID, 'semantic_linkbacks_avatar', true);
 			$semantic_linkbacks_canonical = get_comment_meta( $mention_ID, 'semantic_linkbacks_canonical', true);
 			$semantic_linkbacks_type = get_comment_meta( $mention_ID, 'semantic_linkbacks_type', true);
+			$fav = '<a href="'.$semantic_linkbacks_canonical.'" title="'.$mention_author.'"><i class="fa fa-star"></i></a>';
+			$mention_body = str_replace('favorited this.',$fav,$mention_body);
 
 			echo <<< EOF
 			<div class="mention">
 				<p>
 					<a href="$semantic_linkbacks_author_url" class="avatar"><img src="$semantic_linkbacks_avatar" alt="$mention_author"></a>
-					<a href="$semantic_linkbacks_author_url" title="$mention_author">$mention_author</a> $mention_body <a href="$semantic_linkbacks_canonical" class="rel_time" datetime="$mention_date"><span>$mention_date</span></a>
+					<a href="$semantic_linkbacks_author_url" title="$mention_author">$mention_author</a> $mention_body 
 				</p>
 			</div>
 EOF;
