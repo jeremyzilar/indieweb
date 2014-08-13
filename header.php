@@ -23,7 +23,7 @@
 
   <!-- Hide Mobile Safari Chrome -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="minimal-ui">
+  <meta name="viewport" content="width=device-width; initial-scale=1; minimal-ui">
 
   <!-- Fonts: Lato / http://www.latofonts.com/ -->
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
