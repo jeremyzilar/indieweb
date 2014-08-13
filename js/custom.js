@@ -115,6 +115,8 @@
 
 
 
+  
+
 		// $twt = $('.btn-twitter').hide();
 		// if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
 		// 	$twt.show();
