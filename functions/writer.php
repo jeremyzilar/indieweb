@@ -21,7 +21,7 @@ function writer(){
     $wp_nonce_field = wp_nonce_field( 'new-post' );
 
     echo <<< EOF
-    <section id="writer">
+    <section id="writer" class="inputor">
       <div class="container">
         <div class="col-xs-12 type-msg">
           <button class="btn btn-primary btn-lg" placeholder="Type Message">Type Message</button>

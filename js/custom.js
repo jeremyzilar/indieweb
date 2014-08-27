@@ -41,25 +41,17 @@
       }
     });
 
+    
+
 
     $('#onboarding .close').click(function() {
       $('#onboarding').slideUp('fast');
     });
 
+    // This copies over the text into the input field.
     $("#wedit").keyup(function(event) {
       var t = $(this).text();
       $('#postText').val(t);
-      $(this).each(function(){
-        //highlight_words('going', this);
-        var high = 'kepler';
-        high = high.replace(/\W/g, '');
-        console.log(high);
-        var str = high.split(" ");
-        var text = $(this).text();
-        text = text.replace(str, "<span style='color: blue'>"+str+"</span>");
-        console.log(text);
-        // $(this).html(text);
-      });
     });
     
 

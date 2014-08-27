@@ -45,3 +45,11 @@
 	font-size:36px;
 	font-weight: 800;
 }
+
+/*Emoji*/
+#wedit span img{
+	height:35px;
+	width:35px;
+}
+
+
