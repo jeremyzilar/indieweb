@@ -50,7 +50,8 @@
 
     // This copies over the text into the input field.
     $("#wedit").keyup(function(event) {
-      var t = $(this).text();
+      var t = $(this).html();
+      console.log(t);
       $('#postText').val(t);
     });
     

@@ -206,6 +206,12 @@ section{
   text-align: center;
 }
 
+.entry-content .emoji{
+  height:50px;
+  width:50px;
+  vertical-align: baseline;
+}
+
 
 
 

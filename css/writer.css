@@ -47,9 +47,10 @@
 }
 
 /*Emoji*/
-#wedit span img{
-	height:35px;
-	width:35px;
+#wedit span .emoji{
+	height:30px;
+	width:30px;
+	vertical-align: baseline;
 }
 
 
