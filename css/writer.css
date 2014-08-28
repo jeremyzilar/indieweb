@@ -43,14 +43,27 @@
 	overflow:auto;
 	background: #fff;
 	font-size:36px;
+	line-height: 52px;
 	font-weight: 800;
 }
 
 /*Emoji*/
 #wedit span .emoji{
+	margin-left: 5px;
+	top:2px;
+	position: relative;
 	height:30px;
 	width:30px;
 	vertical-align: baseline;
+}
+
+#wedit .highlight{
+	padding-bottom: 2px;
+	/*background: #fff7d1;*/
+	/*background: rgba(252,219,1,.5);*/
+	color:#ff4a62;
+	/*color:#248fff;*/
+	border-radius: 4px;
 }
 
 

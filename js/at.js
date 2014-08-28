@@ -24,6 +24,13 @@
       ]
       var names = ["Jacob","Isabella","Ethan","Emma","Michael","Olivia","Alexander","Sophia","William","Ava","Joshua","Emily","Daniel","Madison","Jayden","Abigail","Noah","Chloe","你好","你你你"];
 
+      var friends = [
+        { name: "Jeremy", twitter: '@jeremyzilar', email: 'jeremyzilar@gmail.com'},
+        { name: "Dada", twitter: '@jeremyzilar', email: 'jeremyzilar@gmail.com'},
+        { name: "Juliette", twitter: '@oubliette', email: 'juliettecezzar@gmail.com'},
+        { name: "Mama", twitter: '@oubliette', email: 'juliettecezzar@gmail.com'}
+      ];
+
       var names = $.map(names,function(value,i) {
         return {'id':i,'name':value,'email':value+"@email.com"};
       });
@@ -31,8 +38,9 @@
 
       var at_config = {
         at: "@",
-        data: names,
-        tpl: "<li data-value='@${name}'>${name} <small>${email}</small></li>",
+        alias: 'hello',
+        data: friends,
+        tpl: "<li data-value='@${name}'>${name} <small>${name}</small></li>",
         show_the_at: true
       }
       var emoji_config = {
@@ -40,8 +48,9 @@
         limit: 10,
         data: emojis,
         tpl:"<li data-value=':${key}:'>${name} <img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${name}.png'  height='20' width='20' /></li>",
-        insert_tpl: "<img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${name}.png' class='emoji' />",
-        delay: 200
+        insert_tpl: "<span class='highlight'>${name}<img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${name}.png' class='emoji' /></span>",
+        delay: 200,
+        display_timeout: 300
       }
 
 
