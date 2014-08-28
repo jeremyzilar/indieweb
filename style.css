@@ -206,7 +206,13 @@ section{
   text-align: center;
 }
 
+.entry-content .highlight{
+  color:#ff4a62;
+}
 .entry-content .emoji{
+  margin-left: 5px;
+  top:4px;
+  position: relative;
   height:50px;
   width:50px;
   vertical-align: baseline;
