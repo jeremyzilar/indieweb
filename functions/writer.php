@@ -94,6 +94,7 @@ function writerHeader() {
       check_admin_referer( 'new-post' );
       $user_id       = get_current_user_id();
       $post_content  = $_POST['postText'];
+      $post_excerpt  = $post_content;
       $relatedUrl    = $_POST['relatedUrl'];
       $returnUrl     = $_POST['writerUrl'];
       $post_parent   = $_POST['post_parent'];
@@ -122,6 +123,7 @@ function writerHeader() {
         'post_title'    => $post_title,
         // 'post_category' => $post_category,
         'post_content'  => $post_content,
+        'post_excerpt'  => $post_excerpt,
         // 'tags_input'    => $tags,
         'post_status'   => $post_status,
         'post_parent'   => $post_parent,

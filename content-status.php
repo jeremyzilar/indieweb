@@ -9,6 +9,9 @@
         <div class="entry-content">
           <?php the_content(); ?>
         </div><!-- .entry-content -->
+        <div class="entry-summary hidden">
+          <?php the_excerpt(); ?>
+        </div><!-- .entry-summary -->
 
         <?php 
           include INC . 'mentions.php';
