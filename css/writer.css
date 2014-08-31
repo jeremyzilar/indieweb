@@ -47,6 +47,11 @@
 	font-weight: 800;
 }
 
+#wedit.capslock .highlight{
+	/*text-transform: uppercase !important;*/
+
+}
+
 /*Emoji*/
 #wedit span .emoji{
 	margin-left: 5px;

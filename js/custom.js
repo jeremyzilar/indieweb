@@ -51,10 +51,18 @@
     // This copies over the text into the input field.
     $("#wedit").keyup(function(event) {
       var t = $(this).html();
-      console.log(t);
       $('#postText').val(t);
     });
     
+
+    // $('#wedit').keypress(function(e) { 
+    // var s = String.fromCharCode( e.which );
+    // if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
+    //   $('#wedit').addClass('capslock');
+    // } else {
+    //   $('#wedit').removeClass('capslock');
+    // }
+});
 
     
 
