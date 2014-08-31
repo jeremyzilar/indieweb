@@ -62,7 +62,7 @@
     // } else {
     //   $('#wedit').removeClass('capslock');
     // }
-});
+    // });
 
     
 
