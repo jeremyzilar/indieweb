@@ -53,6 +53,8 @@
       var t = $(this).html();
       $('#postText').val(t);
     });
+
+    
     
 
     // $('#wedit').keypress(function(e) { 
