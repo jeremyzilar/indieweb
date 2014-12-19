@@ -91,10 +91,14 @@ function writerHeader() {
         exit;
       }
 
+      $finds = array('&nbsp;');
+      $postText = str_replace($finds, ' ', $_POST['postText']);
+      $postText = strip_tags($postText, '<strong><img>');
+      
       check_admin_referer( 'new-post' );
       $user_id       = get_current_user_id();
-      $post_content  = $_POST['postText'];
-      $post_excerpt  = $post_content;
+      $post_content  = $postText;
+      $post_excerpt  = $postText;
       $relatedUrl    = $_POST['relatedUrl'];
       $returnUrl     = $_POST['writerUrl'];
       $post_parent   = $_POST['post_parent'];

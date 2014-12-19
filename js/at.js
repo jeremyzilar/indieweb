@@ -35,7 +35,7 @@
         limit: 10,
         data: emoji,
         tpl:"<li data-value=':${key}:'>${name} <img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${key}.png' height='20' width='20' /></li>",
-        insert_tpl: "<img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${key}.png' class='emoji' draggable='false' alt='${c}' title='Rocket' aria-label='Emoji: ${name}' data-value=':${key}:'/>",
+        insert_tpl: "<img src='http://a248.e.akamai.net/assets.github.com/images/icons/emoji/${key}.png' class='emoji' draggable='false' alt='&#xE13A;' title='Rocket' aria-label='Emoji: ${name}' data-value=':${key}:'/>",
         delay: 200,
         display_timeout: 300
       }

@@ -10,6 +10,7 @@ include_once 'functions/images.php';
 include_once 'functions/related-link.php';
 include_once 'functions/writer.php';
 include_once 'functions/theme-options.php';
+include_once 'functions/emoji.php';
 
 
 // Variables
